@@ -19,6 +19,7 @@ public class Proyecto_Lotificacion {
    public static int ward2=0;
    public static double ward3=0;
     public static int terrenosvacios(){
+        ward=0;
         for (int i = 0; i < Terrenos.length; i++) {
             
             for (int j = 0; j < Terrenos.length; j++) {
@@ -34,6 +35,7 @@ public class Proyecto_Lotificacion {
     }
     
     public static int terrenosllenos(){
+      ward2=0;  
     for (int i = 0; i < Terrenos.length; i++) {
             
             for (int j = 0; j < Terrenos.length; j++) {
@@ -46,6 +48,7 @@ public class Proyecto_Lotificacion {
     }
     
     public static double precios1() {
+        ward3=0;
         for (int i = 0; i < Terrenos.length; i++) {
 
             for (int j = 0; j < Terrenos.length; j++) {

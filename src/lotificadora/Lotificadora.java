@@ -54,7 +54,7 @@ public class Lotificadora {
                 Class2.Terrenos[fila][columna]=new Terreno(largo,ancho,precio);
              }
              else 
-                    System.out.println("No existe");
+                    System.out.println("No existe o ya esta llena esa posicion");
             break;
             }
             case 2:{
