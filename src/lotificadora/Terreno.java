@@ -11,11 +11,16 @@ package lotificadora;
  */
 public class Terreno {
     private double largo, ancho, precio;
-
+    private boolean ocupado;
     public Terreno(double largo, double ancho, double precio) {
         this.largo = largo;
         this.ancho = ancho;
         this.precio = precio;
+        this.ocupado=true;
+    }
+
+    Terreno() {
+       
     }
 
     public void setLargo(double largo) {
@@ -51,10 +56,21 @@ public class Terreno {
     {
         return precio + (precio * 0.15);
     }
-    
+    public boolean getocupado()
+    {
+     return ocupado;
+    }
     public void printTerreno()
     {
         System.out.println("Largo: "+getLargo()+", Ancho: "+getAncho()+", Area: "+getArea()+" Mts2, Precio: L. "+getPrecioTotal());
+    }
+
+    void setLargo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setAncho() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
